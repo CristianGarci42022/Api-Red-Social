@@ -1,0 +1,129 @@
+/* Perfile.css */
+
+/* ... (otros estilos) */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
+  border-bottom: 3px solid rgb(31, 210, 3);
+  background-color: rgb(17, 12, 113);
+}
+
+header a {
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+}
+
+header a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.nav {
+  width: 100%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+
+
+/* Agregar consulta de medios para tamaños de pantalla pequeños (ej. móviles) */
+@media  screen and (max-width: 600px) {
+  header {
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header small {
+    margin-top: 0.8rem;
+  }
+}
+
+
+
+
+/* Movil */
+header picture > img {
+  border: 2px solid rgb(4, 148, 30);
+  border-radius: 9999px;
+  width: 2.7rem;
+  height: 2.7rem;
+  display: inline;
+  margin-left: 1.5rem;
+  margin-bottom: -1.5rem;
+  margin-top: -0.5rem;
+}
+/* Movil */
+.username {
+  color: rgba(255, 255, 255, 1);
+  line-height: 1;
+  -webkit-user-select: none;
+  user-select: none;
+  margin-right: -0.5rem;
+  margin-bottom: -4.5rem;
+  margin-top: 3rem;
+}
+/* web */
+header small {
+    color: rgb(69, 250, 3);
+    font-size: 0.875rem;
+    line-height: 3.25rem;
+    cursor: pointer;
+}
+
+header small:hover {
+  color: rgba(254, 254, 254, 0.8);
+}
+
+.user {
+  display: grid;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.user > div {
+  text-align: right;
+}
+
+.logo {
+  margin-bottom: 1rem;
+  display: flex;
+  font-size: 30px;
+  font-family: cursive;
+  cursor: pointer;
+  user-select: none;
+}
+
+.navigation {
+  line-height: 2rem;
+  display: flex;
+}
+
+.navigation > div {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  display: flex;
+}
+
+.navigation > div > a {
+  font-weight: 300;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+.navigation > div > a:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* ... (otros estilos) */

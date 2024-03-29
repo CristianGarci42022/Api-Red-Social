@@ -1,0 +1,157 @@
+.post-container {
+  background-color: #e3e3e3;
+  padding: 1rem 0rem;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.posts {
+  display: grid;
+  grid-template-columns: repeat(2, 500px);
+  grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+.post {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.post_user {
+  color: rgba(0, 0, 0, 0.8);
+  user-select: none;
+  font-size: 20px;
+}
+
+.post_profile > img {
+  border: 2px solid rgba(81, 76, 171, 1);
+  border-radius: 9999px;
+  width: 3rem;
+  height: 3rem;
+  display: inline;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.user_info {
+  display: flex;
+  flex-direction: column;
+}
+
+.user_info small {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 12px;
+}
+
+.post-container .post_info {
+  padding: 1rem 2rem;
+}
+
+.post-container .post_info div {
+  display: flex;
+  gap: 5px;
+  padding-top: 10px;
+}
+
+.tags button {
+  border-radius: 20px;
+  padding: 2px 10px;
+  background-color: rgb(0 0 0 / 32%);
+  color: #fff;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.tags button:hover {
+  border-color: transparent;
+  background-color: rgb(15, 0, 151);
+}
+
+.tags button:focus {
+  outline: none;
+}
+
+.tags button:active {
+  transform: scale(1.1);
+}
+
+.data button {
+  padding: 0;
+  background: none;
+  display: flex;
+  border: none;
+  margin-right: 15px;
+  margin-top: 10px;
+}
+
+.data button:focus {
+  outline: none;
+}
+
+.data button:active {
+  transform: scale(1.1);
+}
+
+.data button > img {
+  width: 30px;
+  height: 30px;
+}
+
+.data small {
+  color: rgba(81, 76, 171, 1);
+  margin-top: -5px;
+  font-weight: 600;
+}
+
+/* Movil */
+.post_content {
+  object-fit: contain;
+  height: 12rem;
+  object-position: top;
+}
+
+.all_users {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+.posts {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+
+/* Consulta de medios para pantallas más grandes (web) */
+@media only screen and (min-width: 768px) {
+  .posts {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .post-container {
+    background-color: #70879b;
+    padding: 1rem;
+    margin-bottom: 6px;
+    width: 100%;
+  }
+
+  .post_content {
+    object-fit: contain;
+    height: 12rem;
+    object-position: center;
+  }
+  .all_users {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+}
